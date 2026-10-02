@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mackands Leo Nardo Octano — Unity · XR · Game Developer</title>
+  <meta name="description" content="Portfolio of Mackands Leo Nardo Octano, a Unity game developer and XR developer building VR, AR, spatial computing and game experiences." />
+  <meta property="og:title" content="Mackands Leo Nardo Octano — Unity · XR · Game Developer" />
+  <meta property="og:description" content="VR, AR, spatial computing and game projects built with Unity." />
+  <meta property="og:image" content="assets/img/excavator.jpg" />
+  <meta name="theme-color" content="#008FD4" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">MACKANDS<span class="accent">.dev</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#latest">Latest</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn btn-sm btn-primary">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="sound-btn" id="soundBtn" aria-label="Turn music on" aria-pressed="false" title="Music: off">
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="sound-label mono">BGM OFF</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-grid-floor" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hud-label reveal"><span class="dot"></span> PLAYER 01 · ONLINE</p>
+          <h1 class="hero-title reveal">
+            Mackands<br />Leo Nardo <span class="accent">Octano</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span class="mono">&gt;</span> <span id="typer">Unity Game Developer</span><span class="caret">_</span>
+          </p>
+          <p class="hero-summary reveal">
+            I build immersive experiences across mobile, PC, AR/VR and spatial computing: gameplay systems,
+            AI integration and clean, intuitive UI/UX. I've shipped on tight deadlines and I like turning
+            creative ideas into polished products.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+          </div>
+          <ul class="hero-stats reveal">
+            <li><strong data-count="8">0</strong><span>+ Years<br />Experience</span></li>
+            <li><strong data-count="20">0</strong><span>+ Shipped<br />Projects</span></li>
+            <li><strong data-count="9">0</strong><span>Studios &amp;<br />Teams</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="hud-frame">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <img src="assets/img/profile.jpg" alt="Portrait of Mackands Leo Nardo Octano" class="hero-photo" width="424" height="640" />
+            <div class="scanline" aria-hidden="true"></div>
+            <div class="char-panel">
+              <div class="char-row">
+                <span class="mono muted">CLASS</span>
+                <span class="mono">XR / GAME DEV</span>
+              </div>
+              <div class="bar-row">
+                <span class="mono muted">HP</span>
+                <div class="bar"><i style="--w:92%"></i></div>
+              </div>
+              <div class="bar-row">
+                <span class="mono muted">MP</span>
+                <div class="bar mp"><i style="--w:86%"></i></div>
+              </div>
+            </div>
+          </div>
+          <span class="float-tag t1">Meta Quest</span>
+          <span class="float-tag t2">Vision Pro</span>
+          <span class="float-tag t3">Unity 6</span>
+          <span class="float-tag t4">AR · VR · MR</span>
+        </div>
+      </div>
+      <a href="#latest" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>UNITY 3D</span><span>C#</span><span>META QUEST</span><span>APPLE VISION PRO</span><span>AR FOUNDATION</span><span>SPARK AR</span><span>UNREAL ENGINE 5</span><span>GAMEPLAY SYSTEMS</span><span>UI / UX</span><span>API INTEGRATION</span>
+        <span>UNITY 3D</span><span>C#</span><span>META QUEST</span><span>APPLE VISION PRO</span><span>AR FOUNDATION</span><span>SPARK AR</span><span>UNREAL ENGINE 5</span><span>GAMEPLAY SYSTEMS</span><span>UI / UX</span><span>API INTEGRATION</span>
+      </div>
+    </div>
+
+    <!-- ============ LATEST ============ -->
+    <section class="section section-dark" id="latest">
+      <div class="container">
+        <div class="section-head">
+          <p class="hud-label"><span class="dot"></span> NEW QUEST UNLOCKED</p>
+          <h2 class="section-title">Latest Projects</h2>
+          <p class="section-sub">
+            My most recent work in XR, spatial computing and real-time visualization. Client and company
+            details are under NDA, so these cards cover only the idea and the concept.
+          </p>
+        </div>
+        <div class="featured" id="featuredList"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <p class="hud-label"><span class="dot"></span> INVENTORY</p>
+          <h2 class="section-title">Project Library</h2>
+          <p class="section-sub">Games, VR, AR and interactive apps from 2018 to today. Click a card to see details, or ▶ to play the video.</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="vr" role="tab" aria-selected="false">VR</button>
+          <button class="filter" data-filter="ar" role="tab" aria-selected="false">AR</button>
+          <button class="filter" data-filter="game" role="tab" aria-selected="false">Games</button>
+        </div>
+        <div class="grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-tint" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="hud-label"><span class="dot"></span> QUEST LOG</p>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-7 9.2v4L12 20l7-3.8v-4L12 16l-7-3.8z"/></svg>
+          </div>
+          <div>
+            <p class="mono muted">EDUCATION · SEP 2014 – NOV 2018</p>
+            <h3>Bachelor of Computer Science, Informatics Engineering</h3>
+            <p>Universitas Ahmad Dahlan, Yogyakarta, Indonesia · <strong class="accent">GPA 3.46</strong></p>
+            <p class="muted small">Thesis: Development of the 3D action RPG <em>“Legend of Karna: Son of Surya”</em> using the Rapid Application Development method.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="hud-label"><span class="dot"></span> CHARACTER STATS</p>
+          <h2 class="section-title">Skills &amp; Attributes</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="panel radar-panel reveal">
+            <h3 class="panel-title">Attributes</h3>
+            <svg id="radar" viewBox="-50 0 420 300" role="img" aria-label="Attribute radar chart"></svg>
+          </div>
+
+          <div class="panel reveal">
+            <h3 class="panel-title">Skill Tree <span class="legend"><b>S</b> Excellent <b>A</b> Very good <b>B</b> Good <b>C</b> Average</span></h3>
+            <ul class="skill-list" id="skillList"></ul>
+          </div>
+        </div>
+
+        <div class="skills-bottom">
+          <div class="panel reveal">
+            <h3 class="panel-title">Languages</h3>
+            <ul class="lang-list">
+              <li><span>Indonesian</span><span class="rank">Native</span></li>
+              <li><span>English</span><span class="rank">Very Good</span></li>
+              <li><span>Japanese</span><span class="rank">Good · JLPT N5</span></li>
+            </ul>
+            <h3 class="panel-title mt">Interests</h3>
+            <div class="chips">
+              <span class="chip">Games</span><span class="chip">Anime</span><span class="chip">Cosplay</span><span class="chip">Costume Making</span>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3 class="panel-title">Achievements Unlocked</h3>
+            <ul class="cert-list" id="certList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="hud-label"><span class="dot"></span> PRESS START</p>
+          <h2 class="section-title">Let's build something<br /><span class="accent">immersive</span> together.</h2>
+          <p class="section-sub">Open to Unity, XR and game development roles and collaborations, remote or on-site.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-card" href="mailto:makendsakechix@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            <span><small>Email</small>makendsakechix@gmail.com</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/mackands-leo-nardo-octano-b6a967153/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.3 18.3V10H5.7v8.3h2.6zM7 8.8a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.3 9.5v-4.6c0-2.4-1.3-3.5-3-3.5-1.4 0-2 .8-2.4 1.3V10h-2.6v8.3h2.6v-4.4c0-1.2.2-2.3 1.7-2.3s1.5 1.4 1.5 2.4v4.3h2.2z"/></svg>
+            <span><small>LinkedIn</small>mackands-leo-nardo-octano</span>
+          </a>
+          <a class="contact-card" href="https://github.com/Mackands" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            <span><small>GitHub</small>github.com/Mackands</span>
+          </a>
+          <p class="mono muted small">📍 Yogyakarta, Indonesia · GMT+7</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mackands Leo Nardo Octano</span>
+      <span class="mono muted">Built with ♥ &amp; a lot of Unity coffee</span>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Hidden background-music player (YouTube IFrame API) -->
+  <div id="bgmPlayer" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/audio.js"></script>
+</body>
+</html>
