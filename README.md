@@ -56,6 +56,12 @@ Most content lives in `js/main.js` as plain data.
 
 The site is hosted on GitHub Pages from the `main` branch of this repository. Every push to `main` updates the live site within a minute or two.
 
+## License
+
+Copyright © 2026 Mackands Leo Nardo Octano. All rights reserved.
+
+The code and content in this repository (text, photos, project images and other media) may not be copied, modified or redistributed without written permission. See [LICENSE](LICENSE) for details.
+
 ## Contact
 
 - Email: makendsakechix@gmail.com
