@@ -26,6 +26,7 @@ css/style.css       Styles
 js/main.js          Portfolio data (projects, experience, skills) and interactions
 js/audio.js         Background music and sound effects
 assets/img/         Project covers, profile photo and favicon
+assets/video/       Local gameplay videos
 ```
 
 ## Run locally
@@ -43,6 +44,7 @@ Most content lives in `js/main.js` as plain data.
 ```js
 { type: "youtube", id: "VIDEO_ID", start: 0 }   // start is optional, in seconds
 { type: "drive",   id: "GOOGLE_DRIVE_FILE_ID" }
+{ type: "file",    src: "assets/video/NAME.mp4" }   // local MP4 in assets/video/
 ```
 
 **Change the background music** by editing `BGM` at the top of `js/audio.js`:

@@ -3,6 +3,7 @@
    To add a project: append an object to PROJECTS (or FEATURED).
    Video types: { type: "youtube", id: "VIDEO_ID", start?: seconds }
                 { type: "drive",   id: "GOOGLE_DRIVE_FILE_ID" }
+                { type: "file",    src: "assets/video/NAME.mp4" }   // local MP4
    ========================================================== */
 
 const IMG = "assets/img/";
@@ -73,6 +74,7 @@ const PROJECTS = [
     desc: "One-tap orbit hopper for browser and mobile: your comet circles a planet, and a tap slings it toward the next ring before a rising plasma tide catches up. Designed and built solo with no engine and no build step.",
     role: ["Game design and tuning: difficulty curve, five colour zones, gems and six unlockable trails", "Game feel: screen shake, hit-stop on perfects, squash and stretch, particles and haptics", "Fully synthesised WebAudio sound, with landing notes that climb a pentatonic scale", "Self-playing bot mode, used to simulate players and check the difficulty curve"],
     tags: ["JavaScript", "Canvas 2D", "WebAudio", "Game Feel", "Solo Dev"],
+    videos: [{ label: "Gameplay", type: "file", src: "assets/video/nova-hop.mp4" }],
     links: [
       { label: "Play in Browser", url: "https://mackands.github.io/nova-hop/" },
       { label: "Source Code", url: "https://github.com/Mackands/nova-hop" },
@@ -1185,7 +1187,11 @@ function openModal(p, featured = false) {
   const body = $("#modalBody");
   const vids = p.videos || [];
 
-  const setVideo = (v) => { media.innerHTML = `<iframe src="${videoEmbed(v)}" title="${esc(p.title)} video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`; };
+  const setVideo = (v) => {
+    media.innerHTML = v.type === "file"
+      ? `<video src="${esc(v.src)}" ${p.thumb ? `poster="${IMG + p.thumb}"` : ""} controls autoplay loop playsinline aria-label="${esc(p.title)} video"></video>`
+      : `<iframe src="${videoEmbed(v)}" title="${esc(p.title)} video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+  };
 
   if (vids.length) setVideo(vids[0]);
   else if (p.thumb) media.innerHTML = `<img src="${IMG + p.thumb}" alt="${esc(p.title)}">`;
