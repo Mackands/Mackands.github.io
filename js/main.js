@@ -67,6 +67,27 @@ const FEATURED = [
 /* ---------------- Project library ---------------- */
 const PROJECTS = [
   {
+    title: "Nova Hop",
+    year: "2026", cat: ["game"], type: "Hyper-casual · One-tap Arcade",
+    engine: "HTML5 Canvas", platform: "Web · Mobile", lang: "JavaScript", thumb: "nova-hop.jpg",
+    desc: "One-tap orbit hopper for browser and mobile: your comet circles a planet, and a tap slings it toward the next ring before a rising plasma tide catches up. Designed and built solo with no engine and no build step.",
+    role: ["Game design and tuning: difficulty curve, five colour zones, gems and six unlockable trails", "Game feel: screen shake, hit-stop on perfects, squash and stretch, particles and haptics", "Fully synthesised WebAudio sound, with landing notes that climb a pentatonic scale", "Self-playing bot mode, used to simulate players and check the difficulty curve"],
+    tags: ["JavaScript", "Canvas 2D", "WebAudio", "Game Feel", "Solo Dev"],
+    links: [
+      { label: "Play in Browser", url: "https://mackands.github.io/nova-hop/" },
+      { label: "Source Code", url: "https://github.com/Mackands/nova-hop" },
+    ],
+  },
+  {
+    title: "The Reality Defender",
+    year: "2026", cat: ["ar", "game"], type: "AR · Target Practice",
+    engine: "Unity 6", platform: "Mobile (ARCore / ARKit)", lang: "C#", thumb: "reality-defender.jpg",
+    desc: "AR target-practice mini-game: scan a surface, tap to place an anchored base, then shoot the three energy targets floating above it. Built with AR Foundation and URP.",
+    role: ["Plane detection and tap-to-place, with the base anchored to the tapped plane and turned to face the player", "Physics-based shooting with pooled projectiles and continuous collision detection", "Custom unlit Shader Graph for the energy targets: scrolling noise, fresnel rim, hit flash and vertex wobble", "Event-driven architecture wired in one composition root, with no singletons"],
+    tags: ["AR Foundation", "URP", "Shader Graph", "Object Pooling", "Input System"],
+    links: [{ label: "Source Code", url: "https://github.com/Mackands/The-Reality-Defender" }],
+  },
+  {
     title: "Realm Protector", nda: true,
     year: "2023–2024", cat: ["game"], type: "Turn-Based RPG",
     engine: "Unity 3D", platform: "Mobile", lang: "C#", art: "realm",
