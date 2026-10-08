@@ -75,10 +75,7 @@ const PROJECTS = [
     role: ["Game design and tuning: difficulty curve, five colour zones, gems and six unlockable trails", "Game feel: screen shake, hit-stop on perfects, squash and stretch, particles and haptics", "Fully synthesised WebAudio sound, with landing notes that climb a pentatonic scale", "Self-playing bot mode, used to simulate players and check the difficulty curve"],
     tags: ["JavaScript", "Canvas 2D", "WebAudio", "Game Feel", "Solo Dev"],
     videos: [{ label: "Gameplay", type: "file", src: "assets/video/nova-hop.mp4" }],
-    links: [
-      { label: "Play in Browser", url: "https://mackands.github.io/nova-hop/" },
-      { label: "Source Code", url: "https://github.com/Mackands/nova-hop" },
-    ],
+    links: [{ label: "Play in Browser", url: "https://mackands.github.io/nova-hop/" }],
   },
   {
     title: "The Reality Defender",
